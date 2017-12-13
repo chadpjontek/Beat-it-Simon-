@@ -1,3 +1,38 @@
+var sequence = []; // stores beat sequence player must repeat
+
+$(document).ready(function () {
+  playSound('cymbal');
+})
+
+function start() {
+  // lock in difficulty
+  // $("input:checkbox").click(function () {
+  //   return false;
+  // });
+  sequence.push(randNum());
+  playSequence();
+  
+}
+
+function playSequence(){
+  for (let i = 0; i < sequence.length; i++) {
+    setTimeout(function(){
+      playSound(sequence[i]);
+      $(`.btn${sequence[i]}`).addClass(`ai${sequence[i]}`);
+      setTimeout(function(){
+        $(`.btn${sequence[i]}`).removeClass(`ai${sequence[i]}`);
+      }, 250);
+    }, 1000 * i);
+  }
+}
+
+function randNum() {
+  return Math.floor(Math.random() * 6);
+}
+
+function squareClick(square) {
+  playSound(square);
+}
 
 function playSound(id) {
   var data = {
@@ -48,10 +83,4 @@ function playSound(id) {
     }
   };
   data[id].sound.play();
-}
-$(document).ready(function () {
-  playSound('cymbal');
-})
-function squareClick(square) {
-  playSound(square);
 }

@@ -124,7 +124,7 @@ input:checked + .slider:before {
 .buttons-wrapper > div {
   border: 2px solid white;
   border-radius: 5px;
-  background-color: gray;
+  
   color: black;
   display: flex;
   align-items: center;
@@ -132,88 +132,112 @@ input:checked + .slider:before {
   font-size: 5em;
 }
 
-#zero {
+.btn0 {
   background-color: blue;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#zero:hover {
+.ai0, .btn0:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px blue;
   color: white;
 }
-#zero:active {
+.btn0:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px blue;
   color: blue;
 }
+.ai0 > span {
+  color: white;
+  transition: 150ms ease-in-out;
+}
 
-#one {
+.btn1 {
   background-color: #b700ff;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#one:hover {
+.ai1, .btn1:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
   color: white;
 }
-#one:active {
+.btn1:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #b700ff;
   color: #b700ff;
 }
+.ai1 > span {
+  color: white;
+  transition: 150ms ease-in-out;
+}
 
-#two {
+.btn2 {
   background-color: #19ff00;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#two:hover {
+.ai2, .btn2:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
   color: white;
 }
-#two:active {
+.btn2:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
   color: #19ff00;
 }
+.ai2 > span {
+  color: white;
+  transition: 150ms ease-in-out;
+}
 
-#three {
+.btn3 {
   background-color: red;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#three:hover {
+.ai3, .btn3:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
   color: white;
 }
-#three:active {
+.btn3:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
   color: red;
 }
+.ai3 > span {
+  color: white;
+  transition: 150ms ease-in-out;
+}
 
-#four {
+.btn4 {
   background-color: #fff900;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#four:hover {
+.ai4, .btn4:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
   color: white;
 }
-#four:active {
+.btn4:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #fff900;
   color: #fff900;
 }
+.ai4 > span {
+  color: white;
+  transition: 150ms ease-in-out;
+}
 
-#five {
+.btn5 {
   background-color: #ff7800;
   color: #000;
   transition: all 150ms ease-in-out;
 }
-#five:hover {
+.ai5, .btn5:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
   color: white;
 }
-#five:active {
+.btn5:active {
   box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #ff7800;
   color: #ff7800;
+}
+.ai5 > span {
+  color: white;
+  transition: 150ms ease-in-out;
 }
 
 /* Icons*/
