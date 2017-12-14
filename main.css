@@ -121,6 +121,16 @@ input:checked + .slider:before {
   margin: 15px auto;
 }
 
+
+#status {
+  grid-column: 1/3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
 .buttons-wrapper > div {
   border: 2px solid white;
   border-radius: 5px;
