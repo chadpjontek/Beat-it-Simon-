@@ -1,4 +1,4 @@
-# Beat-it-Simon!
-A "Simon" game using 6 different drum beats. Can you "beat" all 20 rounds?
+# simon-beats
+A "simon" game using percussion instruments. Can you "beat" all 20 rounds?
 
-https://beat-it-simon.netlify.com/
+https://simon-beats.netlify.com/

@@ -2,64 +2,66 @@ body {
   background-color: black;
 }
 .top-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,45px);
   max-width: 320px;
-  margin: 15px auto;
+  grid-gap: 10%;
+  margin: 0px auto;
   color: white;
-
 }
 .top-wrapper > div {
-  
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
-}
 .header {
-  font-size: 1rem;
-  font-family: "Urban Brush Zone";
-  
+  font-size: 1.2rem;
+  font-family: "GeosansLight";
 }
 #simon {
-  font-family: "Funk Machine Regular";
+  font-family: "Fontanero";
   margin: 0px 5px;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 .mode {
   margin: 0px 10px;
-  font-family: "Impact";
-  
+  font-family: "GeosansLight";
 }
-
-#hardcore {
-
-}
-.start > button {
-  font-family: "Funk Machine Regular";
+.start-btn {
+  font-family: "Fontanero";
+  border: 2px solid white;
   border-radius: 5px;
-  border-color: #000;
-  border-style: dashed;
-  border-width: 7px;
   color: #000;
   box-shadow: 0 0 40px 40px #19ff00 inset, 0 0 0 0 #19ff00;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  margin: 5px;
 }
-
-.start > button:hover {
-  box-shadow: 0 0 10px 0 #19ff00 inset, 0 0 10px 4px #19ff00;
+.start-btn:hover {
+  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
 }
-
-.start > button:active {
-  box-shadow: 0 0 40px 40px #19ff00 inset;
+.start-btn:active {
+  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
+  color: #19ff00;
 }
-
-
-#round {
-  margin: 0px 10px;
-  font-family: "Urban Brush Zone";
+.reset-btn {
+  font-family: "Fontanero";
+  border: 2px solid white;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  transition: all 100ms ease-in-out;
+  margin: 5px;
+}
+.reset-btn:hover {
+  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
+}
+.reset-btn:active {
+  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
+  color: red;
+}
+#round, #status {
+  font-family: "GeosansLight";
 }
 .switch {
   position: relative;
@@ -67,9 +69,9 @@ body {
   width: 60px;
   height: 34px;
 }
-
-.switch input {display:none;}
-
+.switch input {
+  display:none;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -82,7 +84,6 @@ body {
   transition: .4s;
   border-radius: 5px;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -95,22 +96,17 @@ body {
   transition: .4s;
   border-radius: 5px;
 }
-
 input:checked + .slider {
-  background-color: red;
+  background-color: #b700ff;
 }
-
 input:focus + .slider {
-  box-shadow: 0 0 1px red;
+  box-shadow: 0 0 1px #b700ff;
 }
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
-
 .buttons-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -120,28 +116,23 @@ input:checked + .slider:before {
   height: 320px;
   margin: 15px auto;
 }
-
-
 #status {
   grid-column: 1/3;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.8em;
 }
-
 .buttons-wrapper > div {
   border: 2px solid white;
   border-radius: 5px;
-  
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 5em;
 }
-
 .btn0 {
   background-color: blue;
   color: #000;
@@ -157,13 +148,12 @@ input:checked + .slider:before {
 }
 .ai0 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
 .btn1 {
   background-color: #b700ff;
   color: #000;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .ai1, .btn1:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
@@ -175,13 +165,12 @@ input:checked + .slider:before {
 }
 .ai1 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
 .btn2 {
   background-color: #19ff00;
   color: #000;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .ai2, .btn2:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
@@ -193,13 +182,12 @@ input:checked + .slider:before {
 }
 .ai2 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
 .btn3 {
   background-color: red;
   color: #000;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .ai3, .btn3:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
@@ -211,13 +199,12 @@ input:checked + .slider:before {
 }
 .ai3 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
 .btn4 {
   background-color: #fff900;
   color: #000;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .ai4, .btn4:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
@@ -229,13 +216,12 @@ input:checked + .slider:before {
 }
 .ai4 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
 .btn5 {
   background-color: #ff7800;
   color: #000;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 .ai5, .btn5:hover {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
@@ -247,9 +233,22 @@ input:checked + .slider:before {
 }
 .ai5 > span {
   color: white;
-  transition: 150ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
-
+.bottom-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  max-width: 320px;
+  margin: 15px auto;
+  color: white;
+}
+.bottom-wrapper > div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
 /* Icons*/
 @font-face {
   font-family: 'simon-beats';
@@ -261,7 +260,6 @@ input:checked + .slider:before {
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'simon-beats' !important;
@@ -271,12 +269,10 @@ input:checked + .slider:before {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-cymbal:before {
   content: "\e900";
 }
@@ -300,10 +296,10 @@ input:checked + .slider:before {
 }
 /* local fonts */
 @font-face {
-  font-family: "Urban Brush Zone";
-  src: url("fonts/Urban-Brush-Zone.ttf") format('truetype'); 
+  font-family: "GeosansLight";
+  src: url("fonts/GeosansLight.ttf") format('truetype'); 
 }
 @font-face {
-  font-family: "Funk Machine Regular";
-  src: url("fonts/funkmachine.ttf") format('truetype'); 
+  font-family: "Fontanero";
+  src: url("fonts/Fontanero-FFP.ttf") format('truetype'); 
 }

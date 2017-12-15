@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Beat it Simon!</title>
+  <title>simon beats</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,54 +12,48 @@
 
 <body>
   <div class="top-wrapper">
-    <div class="header">BEAT IT <span id="simon">SIMON!</span></div>
-
-    <div class="">
-        <span class="mode">CASUAL</span>
+    <div class="header">
+      <span id="simon">simon</span> beats</div>
+    <div>
+      <span class="mode">CASUAL</span>
       <label class="switch">
         <input type="checkbox">
         <span class="slider"></span>
       </label>
-      <span id="hardcore" class="mode">HARDCORE</span>  
+      <span id="hardcore" class="mode">HARDCORE</span>
     </div>
     <div class="start">
       <button class="start-btn" onclick="start();">START</button>
-      <span id="round">ROUND: 1</span>
+      <button class="reset-btn" onclick="reset();">RESET</button>
+    </div>
+    <div>
+      <span id="round">ROUND: 0</span>
     </div>
   </div>
   <div id="buttons" class="buttons-wrapper">
     <div class="btn0" onclick="squareClick('0');">
-      <span class="icon-kick">
-
-      </span>
+      <span class="icon-kick"></span>
     </div>
     <div class="btn1" onclick="squareClick('1');">
-      <span class="icon-oHat">
-
-      </span>
+      <span class="icon-oHat"></span>
     </div>
     <div class="btn2" onclick="squareClick('2');">
-      <span class="icon-snare">
-
-      </span>
+      <span class="icon-snare"></span>
     </div>
     <div class="btn3" onclick="squareClick('3');">
-      <span class="icon-tamb">
-
-      </span>
+      <span class="icon-tamb"></span>
     </div>
     <div class="btn4" onclick="squareClick('4');">
-      <span class="icon-tom">
-
-      </span>
+      <span class="icon-tom"></span>
     </div>
     <div class="btn5" onclick="squareClick('5');">
-      <span class="icon-triangle">
-
-      </span>
+      <span class="icon-triangle"></span>
     </div>
   </div>
-  <div id="status"></div>
+  <div class="bottom-wrapper">
+    <div id="status"></div>
+  </div>
+
   <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
