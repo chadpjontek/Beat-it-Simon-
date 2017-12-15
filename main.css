@@ -138,7 +138,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 150ms ease-in-out;
 }
-.ai0, .btn0:hover {
+.ai0 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px blue;
   color: white;
 }
@@ -155,7 +155,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 100ms ease-in-out;
 }
-.ai1, .btn1:hover {
+.ai1 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
   color: white;
 }
@@ -172,7 +172,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 100ms ease-in-out;
 }
-.ai2, .btn2:hover {
+.ai2 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
   color: white;
 }
@@ -189,7 +189,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 100ms ease-in-out;
 }
-.ai3, .btn3:hover {
+.ai3 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
   color: white;
 }
@@ -206,7 +206,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 100ms ease-in-out;
 }
-.ai4, .btn4:hover {
+.ai4 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
   color: white;
 }
@@ -223,7 +223,7 @@ input:checked + .slider:before {
   color: #000;
   transition: all 100ms ease-in-out;
 }
-.ai5, .btn5:hover {
+.ai5 {
   box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
   color: white;
 }
