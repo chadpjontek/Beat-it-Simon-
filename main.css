@@ -11,9 +11,15 @@ body {
   color: white;
 }
 .top-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header {
   font-size: 1.2rem;
@@ -33,15 +39,20 @@ body {
   border: 2px solid white;
   border-radius: 5px;
   color: #000;
-  box-shadow: 0 0 40px 40px #19ff00 inset, 0 0 0 0 #19ff00;
+  -webkit-box-shadow: 0 0 40px 40px #19ff00 inset, 0 0 0 0 #19ff00;
+          box-shadow: 0 0 40px 40px #19ff00 inset, 0 0 0 0 #19ff00;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   margin: 5px;
 }
 .start-btn:hover {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
 }
 .start-btn:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
   color: #19ff00;
 }
 .reset-btn {
@@ -49,15 +60,20 @@ body {
   border: 2px solid white;
   border-radius: 5px;
   color: #000;
-  box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  -webkit-box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+          box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   margin: 5px;
 }
 .reset-btn:hover {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
 }
 .reset-btn:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
   color: red;
 }
 #round, #status {
@@ -81,6 +97,7 @@ body {
   bottom: 0;
   background-color: blue;
   -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
   border-radius: 5px;
 }
@@ -93,6 +110,7 @@ body {
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
   border-radius: 5px;
 }
@@ -100,7 +118,8 @@ input:checked + .slider {
   background-color: #b700ff;
 }
 input:focus + .slider {
-  box-shadow: 0 0 1px #b700ff;
+  -webkit-box-shadow: 0 0 1px #b700ff;
+          box-shadow: 0 0 1px #b700ff;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -119,120 +138,168 @@ input:checked + .slider:before {
 #status {
   grid-column: 1/3;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.8em;
 }
 .buttons-wrapper > div {
   border: 2px solid white;
   border-radius: 5px;
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 5em;
 }
 .btn0 {
   background-color: blue;
   color: #000;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 .ai0 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px blue;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px blue;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px blue;
   color: white;
 }
 .btn0:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px blue;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px blue;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px blue;
   color: blue;
 }
 .ai0 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .btn1 {
   background-color: #b700ff;
   color: #000;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .ai1 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #b700ff;
   color: white;
 }
 .btn1:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #b700ff;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #b700ff;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #b700ff;
   color: #b700ff;
 }
 .ai1 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .btn2 {
   background-color: #19ff00;
   color: #000;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .ai2 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
   color: white;
 }
 .btn2:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #19ff00;
   color: #19ff00;
 }
 .ai2 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .btn3 {
   background-color: red;
   color: #000;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .ai3 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
   color: white;
 }
 .btn3:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px red;
   color: red;
 }
 .ai3 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .btn4 {
   background-color: #fff900;
   color: #000;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .ai4 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #fff900;
   color: white;
 }
 .btn4:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #fff900;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #fff900;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #fff900;
   color: #fff900;
 }
 .ai4 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .btn5 {
   background-color: #ff7800;
   color: #000;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 .ai5 {
-  box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
+  -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
+          box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #ff7800;
   color: white;
 }
 .btn5:active {
-  box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #ff7800;
+  -webkit-box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #ff7800;
+          box-shadow: 0 0 40px 40px white inset, 0 0 12px 6px #ff7800;
   color: #ff7800;
 }
 .ai5 > span {
   color: white;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
 }
 .bottom-wrapper {
@@ -244,10 +311,16 @@ input:checked + .slider:before {
   color: white;
 }
 .bottom-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /* Icons*/
 @font-face {
