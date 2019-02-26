@@ -2,12 +2,6 @@ body {
   background-color: black;
 }
 .top-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,45px);
-  max-width: 320px;
-  grid-gap: 10%;
-  margin: 0px auto;
   color: white;
 }
 .top-wrapper > div {
@@ -34,6 +28,9 @@ body {
   margin: 0px 10px;
   font-family: "GeosansLight";
 }
+.start {
+  margin: 10px 0;
+}
 .start-btn {
   font-family: "Fontanero";
   border: 2px solid white;
@@ -45,6 +42,7 @@ body {
   -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   margin: 5px;
+  padding: 6px;
 }
 .start-btn:hover {
   -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px #19ff00;
@@ -66,6 +64,7 @@ body {
   -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   margin: 5px;
+  padding: 6px;
 }
 .reset-btn:hover {
   -webkit-box-shadow: 0 0 12px 3px white inset, 0 0 12px 6px red;
@@ -370,9 +369,9 @@ input:checked + .slider:before {
 /* local fonts */
 @font-face {
   font-family: "GeosansLight";
-  src: url("fonts/GeosansLight.ttf") format('truetype'); 
+  src: url("fonts/GeosansLight.ttf") format('truetype');
 }
 @font-face {
   font-family: "Fontanero";
-  src: url("fonts/Fontanero-FFP.ttf") format('truetype'); 
+  src: url("fonts/Fontanero-FFP.ttf") format('truetype');
 }
